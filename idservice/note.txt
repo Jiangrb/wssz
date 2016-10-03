@@ -1,0 +1,10 @@
+#########－－－－－－－－－－－－－－－－
+1、从spring mvc 中的上下文中获取 注入的bean，以下则是通过WebApplicationContext的对象获取DataSource
+
+WebApplicationContext webApplicationContext = ContextLoader.getCurrentWebApplicationContext();
+DataSource dataSource = (DataSource) webApplicationContext.getBean("dataSource");
+
+#########－－－－－－－－－－－－－－－－
+
+
+2、
