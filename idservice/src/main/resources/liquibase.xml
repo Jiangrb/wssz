@@ -10,15 +10,26 @@
 	</preConditions>
 
 	<changeSet id="1" author="jiangrb">
-		<createTable tableName="Client">
+		<createTable tableName="t_client">
 			<column name="id" type="int" autoIncrement="true">
 				<constraints primaryKey="true" nullable="false" />
 			</column>
-			<column name="token" type="varchar(60)" remarks="token"/>
+			<column name="token" type="varchar(60)" remarks="token" />
 			<column name="key" type="varchar(60)" />
 			<column name="name" type="varchar(60)" remarks="客户端名称" />
 		</createTable>
 	</changeSet>
 
+	<changeSet id="2" author="jiangrb">
+		<createTable tableName="t_user">
+			<column name="id" type="varchar(60)" remarks="token" />
+			<column name="name" type="varchar(60)" remarks="客户端名称" />
+			<column name="organization" type="varchar(100)" remarks="公司组织ID" />
+			<column name="email" type="varchar(60)" remarks="邮箱" />
+			<column name="phone" type="varchar(60)" remarks="客户端名称" />
+			<column name="address" type="varchar(60)" remarks="地址" />
+			<column name="createdate" type="datetime" remarks="创建时间" />
+		</createTable>
+	</changeSet>
 
 </databaseChangeLog>

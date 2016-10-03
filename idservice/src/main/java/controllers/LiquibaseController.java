@@ -14,7 +14,7 @@ import liquibase.exception.LiquibaseException;
 import services.LiquibaseServcie;
 
 @Controller
-@RequestMapping("/liquibase")
+@RequestMapping("/db")
 public class LiquibaseController {
 
 	static Logger logger = Logger.getLogger(LiquibaseController.class);
