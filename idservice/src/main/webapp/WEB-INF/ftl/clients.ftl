@@ -1,5 +1,5 @@
 <html>
-<head><title>all clients - FreeMarker Spring MVC Hello World</title>
+<head><title>all clients page</title>
 <body>
 <div id="header">
 <H2>
